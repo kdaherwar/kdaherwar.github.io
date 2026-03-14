@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuldeep | AWS Projects</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter, sans-serif}
+
+body{
+background:#0f172a;
+color:#e2e8f0
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#020617;
+}
+
+nav a{
+color:#e2e8f0;
+text-decoration:none;
+margin-left:20px;
+font-weight:500
+}
+
+nav a:hover{
+color:#38bdf8
+}
+
+.section{
+padding:70px 8%;
+max-width:1100px;
+margin:auto
+}
+
+.section h1{
+font-size:36px;
+margin-bottom:10px
+}
+
+.section p{
+color:#94a3b8;
+margin-bottom:40px
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px
+}
+
+.card{
+background:#020617;
+padding:20px;
+border-radius:14px;
+border:1px solid #1e293b;
+transition:0.3s
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#38bdf8
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:18px
+}
+
+.card p{
+color:#94a3b8;
+font-size:14px;
+line-height:1.6
+}
+
+footer{
+padding:40px 8%;
+text-align:center;
+color:#64748b
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<div><strong>Kuldeep</strong></div>
+
+<div>
+<a href="index.html">Home</a>
+<a href="index.html#skills">Skills</a>
+<a href="index.html#achievements">Achievements</a>
+<a href="https://www.credly.com/users/kdaherwar" target="_blank">Credly</a>
+</div>
+</nav>
+
+
+<section class="section">
+
+<h1>AWS Cloud Projects</h1>
+
+<p>
+Hands-on cloud architecture and infrastructure projects built using AWS services
+including compute, networking, storage, database, and content delivery systems.
+</p>
+
+<div class="grid">
+
+
+<div class="card">
+<h3>Static Website Hosting using Amazon S3</h3>
+<p>
+Configured an Amazon S3 bucket for static website hosting, uploaded HTML assets,
+and implemented bucket policies to enable public access.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Multi-AZ EC2 Architecture with EBS</h3>
+<p>
+Deployed EC2 instances across multiple Availability Zones and attached EBS volumes
+to provide persistent storage and fault tolerance.
+</p>
+</div>
+
+
+<div class="card">
+<h3>EC2 Instance Deployment and Management</h3>
+<p>
+Launched and managed EC2 instances using SSH, EC2 Instance Connect, and AWS
+Systems Manager.
+</p>
+</div>
+
+
+<div class="card">
+<h3>NoSQL Database using DynamoDB</h3>
+<p>
+Designed DynamoDB tables using partition and sort keys for scalable data storage
+and retrieval.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Secure VPC Architecture</h3>
+<p>
+Created a custom VPC with public and private subnets and configured route tables,
+Internet Gateway, and security groups.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Shared File Storage using Amazon EFS</h3>
+<p>
+Implemented a distributed file system with Amazon EFS mounted across multiple EC2
+instances.
+</p>
+</div>
+
+
+<div class="card">
+<h3>High Availability Database using RDS</h3>
+<p>
+Configured Amazon RDS with Multi-AZ deployment to enable automatic failover and
+high database reliability.
+</p>
+</div>
+
+
+<div class="card">
+<h3>AWS IAM Access Control</h3>
+<p>
+Implemented IAM users, groups, and least-privilege access policies for secure cloud
+resource management.
+</p>
+</div>
+
+
+<div class="card">
+<h3>EC2 Auto Scaling Infrastructure</h3>
+<p>
+Configured Auto Scaling groups with launch templates and CloudWatch alarms for
+automatic scaling based on CPU usage.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Inter-VPC Communication using VPC Peering</h3>
+<p>
+Established VPC peering between multiple VPC networks and updated route tables for
+secure internal communication.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Highly Available Web Application Architecture</h3>
+<p>
+Built scalable architecture using Route 53, CloudFront, Elastic Load Balancer,
+EC2 instances, and RDS Multi-AZ deployment.
+</p>
+</div>
+
+
+<div class="card">
+<h3>Global Content Delivery using CloudFront and S3</h3>
+<p>
+Configured CloudFront CDN with S3 origin to deliver content globally with low
+latency and caching.
+</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+<footer>
+<p>© 2026 Kuldeep | Cloud Engineer Portfolio</p>
+</footer>
+
+
+</body>
+</html>
