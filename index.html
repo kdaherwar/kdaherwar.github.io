@@ -5,24 +5,95 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Kuldeep | Cloud Engineer Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Inter, sans-serif}
 body{background:#0f172a;color:#e2e8f0}
-nav{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;background:#020617;position:sticky;top:0}
-nav a{color:#e2e8f0;text-decoration:none;margin-left:20px;font-weight:500}
+
+nav{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:20px 8%;
+ background:#020617;
+ position:sticky;
+ top:0
+}
+
+nav a{
+ color:#e2e8f0;
+ text-decoration:none;
+ margin-left:20px;
+ font-weight:500
+}
+
 nav a:hover{color:#38bdf8}
-.hero{padding:80px 8%;max-width:1100px;margin:auto}
-.hero h1{font-size:42px;margin-bottom:10px}
+
+.hero{
+ padding:80px 8%;
+ max-width:1100px;
+ margin:auto;
+ display:flex;
+ align-items:center;
+ gap:40px;
+ flex-wrap:wrap
+}
+
+.hero img{
+ width:180px;
+ height:180px;
+ border-radius:50%;
+ object-fit:cover;
+ border:4px solid #38bdf8
+}
+
+.hero h1{font-size:40px;margin-bottom:10px}
 .hero p{color:#94a3b8;line-height:1.6}
-.btn{display:inline-block;margin-top:20px;padding:10px 20px;background:#38bdf8;border-radius:10px;color:#020617;text-decoration:none;font-weight:600}
-.section{padding:70px 8%;max-width:1100px;margin:auto}
-.section h2{margin-bottom:25px;font-size:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:#020617;padding:20px;border-radius:14px;border:1px solid #1e293b;transition:0.3s}
-.card:hover{transform:translateY(-5px);border-color:#38bdf8}
-.card h3{margin-bottom:10px;font-size:18px}
+
+.section{
+ padding:70px 8%;
+ max-width:1100px;
+ margin:auto
+}
+
+.section h2{
+ margin-bottom:25px;
+ font-size:30px
+}
+
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+ gap:20px
+}
+
+.card{
+ background:#020617;
+ padding:20px;
+ border-radius:14px;
+ border:1px solid #1e293b;
+ transition:0.3s
+}
+
+.card:hover{
+ transform:translateY(-5px);
+ border-color:#38bdf8
+}
+
+.card h3{margin-bottom:10px}
 .card p{font-size:14px;color:#94a3b8}
-footer{padding:40px 8%;text-align:center;color:#64748b}
+
+.list{color:#94a3b8;line-height:1.8}
+.list li{margin-bottom:10px}
+
+footer{
+ padding:40px 8%;
+ text-align:center;
+ color:#64748b
+}
+
+.link{color:#38bdf8;text-decoration:none}
+
 </style>
 </head>
 
@@ -32,68 +103,143 @@ footer{padding:40px 8%;text-align:center;color:#64748b}
 <div><strong>Kuldeep</strong></div>
 <div>
 <a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="https://www.linkedin.com/in/kdaherwar" target="_blank">LinkedIn</a>
-<a href="https://www.credly.com/users/kdaherwar" target="_blank">Certifications</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#achievements">Achievements</a>
+<a href="projects.html">Projects</a>
+<a href="https://www.credly.com/users/kdaherwar" target="_blank">Credly Badges</a>
 </div>
 </nav>
 
 <section class="hero">
-<h1>Aspiring Cloud Engineer</h1>
-<p>
-MCA student passionate about cloud computing and infrastructure. Hands‑on
-experience with AWS services including EC2, S3, IAM, VPC, RDS, DynamoDB,
-EFS, Auto Scaling and CloudFront through multiple cloud architecture labs.
-Interested in designing scalable, highly available cloud systems.
+
+<img src="profile.jpg" alt="Kuldeep Profile">
+
+<div>
+<h1>Kuldeep</h1>
+<p>Cloud Engineer | AWS Cloud | Infrastructure Enthusiast</p>
+
+<p style="margin-top:10px">
+Faridabad, India · +91 9711693416 <br>
+<a class="link" href="mailto:Kuldeepaherwar416@gmail.com">Kuldeepaherwar416@gmail.com</a><br>
+<a class="link" href="https://www.linkedin.com/in/kdaherwar" target="_blank">LinkedIn Profile</a>
 </p>
-<a class="btn" href="#projects">View AWS Projects</a>
-</section>
-
-<section id="about" class="section">
-<h2>About Me</h2>
-<p style="color:#94a3b8;line-height:1.7">
-I am currently pursuing a Master of Computer Applications (MCA) from Lingaya's
-Vidyapeeth University. My focus area is cloud computing and infrastructure
-engineering. I have completed multiple hands‑on AWS labs through AWS Skill
-Builder and built practical projects involving networking architecture,
-compute services, storage solutions, and scalable cloud deployments.
-</p>
-</section>
-
-<section id="projects" class="section">
-<h2>AWS Cloud Projects</h2>
-<div class="grid">
-
-<div class="card"><h3>Static Website Hosting using Amazon S3</h3><p>Configured S3 bucket for static website hosting with public access policies.</p></div>
-
-<div class="card"><h3>Multi‑AZ EC2 Architecture with EBS</h3><p>Deployed EC2 instances across multiple availability zones with EBS storage.</p></div>
-
-<div class="card"><h3>EC2 Instance Deployment and Management</h3><p>Launched and managed EC2 instances using SSH and Systems Manager.</p></div>
-
-<div class="card"><h3>NoSQL Database using DynamoDB</h3><p>Designed DynamoDB tables with partition and sort keys for scalable storage.</p></div>
-
-<div class="card"><h3>Secure VPC Architecture</h3><p>Created VPC with public/private subnets, route tables and security groups.</p></div>
-
-<div class="card"><h3>Shared File Storage using Amazon EFS</h3><p>Mounted EFS across EC2 instances for distributed shared storage.</p></div>
-
-<div class="card"><h3>High Availability Database using RDS</h3><p>Configured RDS Multi‑AZ deployment for failover and reliability.</p></div>
-
-<div class="card"><h3>AWS IAM Access Control</h3><p>Implemented IAM users, groups and least‑privilege access policies.</p></div>
-
-<div class="card"><h3>EC2 Auto Scaling Infrastructure</h3><p>Configured Auto Scaling groups with CloudWatch monitoring.</p></div>
-
-<div class="card"><h3>VPC Peering Communication</h3><p>Connected multiple VPC networks securely using route table updates.</p></div>
-
-<div class="card"><h3>Highly Available Web Architecture</h3><p>Built architecture using Route53, CloudFront, ELB, EC2 and RDS.</p></div>
-
-<div class="card"><h3>CloudFront Global Content Delivery</h3><p>Configured CDN with S3 origin for low‑latency global delivery.</p></div>
 
 </div>
 </section>
 
+<section id="about" class="section">
+<h2>About Me</h2>
+<p class="list">
+Cloud Engineer with hands-on experience in AWS cloud services including EC2, S3, IAM, VPC, RDS, DynamoDB, EFS, Auto Scaling and CloudFront. Currently pursuing Master of Computer Applications (MCA). Experienced in building cloud projects focused on high availability, scalable infrastructure, secure networking and distributed storage architectures. Possess foundational knowledge of Linux administration, networking concepts, DNS, IP addressing and client-server architecture. Seeking an entry-level Cloud Engineer or Cloud Support role.
+</p>
+</section>
+
+<section id="education" class="section">
+<h2>Education</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Master of Computer Applications (MCA)</h3>
+<p>Lingaya's Vidyapeeth University</p>
+<p>2024 – Present</p>
+</div>
+
+<div class="card">
+<h3>Bachelor of Computer Applications (BCA)</h3>
+<p>DAV Centenary College</p>
+<p>2021 – 2024 · 80%</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+<h2>Internship Experience</h2>
+
+<div class="card">
+<h3>Google Cloud Generative AI Virtual Internship</h3>
+<p>NASSCOM FutureSkills Prime | Remote</p>
+<p>June 2025 – September 2025</p>
+
+<p style="margin-top:10px;color:#94a3b8">
+Acquired foundational knowledge of Google Cloud services and Generative AI concepts while working on cloud-based learning modules and labs. Developed 25+ cloud learning modules and improved technical documentation and self-learning skills in a virtual environment.
+</p>
+
+</div>
+</section>
+
+<section id="skills" class="section">
+<h2>Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>AWS Cloud & Infrastructure</h3>
+<p>EC2, S3, IAM, VPC, RDS, DynamoDB, EFS, Auto Scaling, CloudFront</p>
+</div>
+
+<div class="card">
+<h3>Operating Systems</h3>
+<p>Linux basics, user management, file system, troubleshooting</p>
+</div>
+
+<div class="card">
+<h3>Networking</h3>
+<p>IP Addressing, DNS, networking fundamentals, client-server architecture</p>
+</div>
+
+<div class="card">
+<h3>Programming</h3>
+<p>Java, Python, C++, C#, SQL basics, Data Structures</p>
+</div>
+
+<div class="card">
+<h3>Soft Skills</h3>
+<p>Communication, problem solving, teamwork, support mindset</p>
+</div>
+
+</div>
+</section>
+
+<section id="achievements" class="section">
+<h2>Notable Achievements</h2>
+
+<ul class="list">
+
+<li>Completed 12 hands-on AWS cloud labs and earned AWS re/Start Graduate certification.</li>
+
+<li>Built 12 AWS cloud projects including multi-AZ architectures, VPC peering and global content delivery systems.</li>
+
+<li>Developed 25+ cloud learning modules during Google Cloud Virtual Internship.</li>
+
+<li>Secured 2nd position in Science Exhibition – Fusion Fantasia 2024.</li>
+
+</ul>
+
+</section>
+
+<section class="section">
+<h2>Certifications</h2>
+
+<ul class="list">
+
+<li>AWS re/Start Graduate – Amazon Web Services (2025)</li>
+
+<li>AWS Cloud Practitioner Learning Certificate – AWS Skill Builder (2025)</li>
+
+<li>Programming in Java – NPTEL (2025)</li>
+
+<li>Programming in Python (A+ Grade) – Udemy (2025)</li>
+
+</ul>
+
+</section>
+
 <footer>
 <p>© 2026 Kuldeep | Cloud Engineer Portfolio</p>
-<p>Faridabad, India • Kuldeepaherwar416@gmail.com</p>
 </footer>
 
 </body>
